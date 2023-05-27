@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gooback/pages/FormPage.dart';
 
 import 'components/BestFits.dart';
 import 'components/CustomBottomNavigationBar.dart';
@@ -40,72 +41,74 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {
-        // This will dismiss the keyboard when the user taps outside the TextField
-        FocusScope.of(context).unfocus();
-      },
-      child: Scaffold(
-          appBar: PreferredSize(
-            child: Padding(
-                padding:
-                    EdgeInsets.only(top: MediaQuery.of(context).padding.top),
-                child: TopAppBar()),
-            preferredSize: Size.fromHeight(100),
-          ),
-          body: Container(
-            width: double.infinity,
-            height: double.infinity,
-            child: ListView(children: <Widget>[
-              SizedBox(height: 15), // Add 20px of space (height
-              CustomSearchBar(),
-              SizedBox(height: 15), // Add 20px of space (height
-              Container(
-                margin: EdgeInsets.only(left: 15),
-                child: Text(
-                  "Recommended",
-                  style: TextStyle(fontSize: 25, fontWeight: FontWeight.w600),
-                ),
-              ),
-              SizedBox(height: 15),
-              BestFits(),
-              SizedBox(height: 15), // Add 20px of space (height
-              Container(
-                margin: EdgeInsets.only(left: 15),
-                child: Text(
-                  "Opportunities",
-                  style: TextStyle(fontSize: 25, fontWeight: FontWeight.w600),
-                ),
-              ),
-              SizedBox(height: 15),
-              StipendCard(
-                url:
-                    "https://gamanza.com/wp-content/uploads/2019/07/Gamanza-black-vertical-bold.png",
-                companyName: "TechVantage",
-                compensation: 100,
-                desciption:
-                    "Innovix is a dynamic tech company that thrives on pushing the boundaries of innovation. We are driven by a passion for creating groundbreaking technologies that disrupt industries and revolutionize the way people live and work. From developing cutting-edge software applications to exploring emerging technologies like blockchain and Internet of Things (IoT), Innovix is at the forefront of driving technological progress and empowering businesses to embrace the future.",
-              ),
-              SizedBox(height: 30),
-              StipendCard(
-                url:
-                    "http://www.projektip.si/wp-content/uploads/2017/05/logo2.jpg",
-                companyName: "Innovix",
-                compensation: 150,
-                desciption:
-                    "TechVantage is a cutting-edge technology company that specializes in providing innovative solutions for businesses seeking to thrive in the digital era. We leverage the power of advanced technologies such as artificial intelligence, machine learning, and data analytics to help our clients gain a competitive edge in their respective industries",
-              ),
-              SizedBox(height: 30),
-              StipendCard(
-                url: "https://www.epilog.net/images/logos/logo.png",
-                companyName: "Innovix",
-                compensation: 150,
-                desciption:
-                    "TechVantage is a cutting-edge technology company that specializes in providing innovative solutions for businesses seeking to thrive in the digital era. We leverage the power of advanced technologies such as artificial intelligence, machine learning, and data analytics to help our clients gain a competitive edge in their respective industries",
-              ),
-            ]),
-          ),
-          bottomNavigationBar: CustomBottomNavigationBar()),
-    );
+        onTap: () {
+          // This will dismiss the keyboard when the user taps outside the TextField
+          FocusScope.of(context).unfocus();
+        },
+        child:
+            // Scaffold(
+            //     appBar: PreferredSize(
+            //       child: Padding(
+            //           padding:
+            //               EdgeInsets.only(top: MediaQuery.of(context).padding.top),
+            //           child: TopAppBar()),
+            //       preferredSize: Size.fromHeight(100),
+            //     ),
+            //     body: Container(
+            //       width: double.infinity,
+            //       height: double.infinity,
+            //       child: ListView(children: <Widget>[
+            //         SizedBox(height: 15), // Add 20px of space (height
+            //         CustomSearchBar(),
+            //         SizedBox(height: 15), // Add 20px of space (height
+            //         Container(
+            //           margin: EdgeInsets.only(left: 15),
+            //           child: Text(
+            //             "Recommended",
+            //             style: TextStyle(fontSize: 25, fontWeight: FontWeight.w600),
+            //           ),
+            //         ),
+            //         SizedBox(height: 15),
+            //         BestFits(),
+            //         SizedBox(height: 15), // Add 20px of space (height
+            //         Container(
+            //           margin: EdgeInsets.only(left: 15),
+            //           child: Text(
+            //             "Opportunities",
+            //             style: TextStyle(fontSize: 25, fontWeight: FontWeight.w600),
+            //           ),
+            //         ),
+            //         SizedBox(height: 15),
+            //         StipendCard(
+            //           url:
+            //               "https://gamanza.com/wp-content/uploads/2019/07/Gamanza-black-vertical-bold.png",
+            //           companyName: "TechVantage",
+            //           compensation: 100,
+            //           desciption:
+            //               "Innovix is a dynamic tech company that thrives on pushing the boundaries of innovation. We are driven by a passion for creating groundbreaking technologies that disrupt industries and revolutionize the way people live and work. From developing cutting-edge software applications to exploring emerging technologies like blockchain and Internet of Things (IoT), Innovix is at the forefront of driving technological progress and empowering businesses to embrace the future.",
+            //         ),
+            //         SizedBox(height: 30),
+            //         StipendCard(
+            //           url:
+            //               "http://www.projektip.si/wp-content/uploads/2017/05/logo2.jpg",
+            //           companyName: "Innovix",
+            //           compensation: 150,
+            //           desciption:
+            //               "TechVantage is a cutting-edge technology company that specializes in providing innovative solutions for businesses seeking to thrive in the digital era. We leverage the power of advanced technologies such as artificial intelligence, machine learning, and data analytics to help our clients gain a competitive edge in their respective industries",
+            //         ),
+            //         SizedBox(height: 30),
+            //         StipendCard(
+            //           url: "https://www.epilog.net/images/logos/logo.png",
+            //           companyName: "Innovix",
+            //           compensation: 150,
+            //           desciption:
+            //               "TechVantage is a cutting-edge technology company that specializes in providing innovative solutions for businesses seeking to thrive in the digital era. We leverage the power of advanced technologies such as artificial intelligence, machine learning, and data analytics to help our clients gain a competitive edge in their respective industries",
+            //         ),
+            //       ]),
+            //     ),
+            //     bottomNavigationBar: CustomBottomNavigationBar()),
+            // );
+            FormPage());
   }
 }
 
