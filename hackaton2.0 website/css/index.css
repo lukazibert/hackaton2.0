@@ -1,0 +1,48 @@
+
+  #searchbar {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .navbar-custom {
+    background-color: white;
+  }
+
+  .navbar-custom .navbar-brand,
+  .navbar-custom .nav-link {
+    color: black;
+  }
+
+  .scrolling-wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+  }
+  
+  .scrolling-wrapper::-webkit-scrollbar {
+    width: 8px;
+    background-color: transparent;
+  }
+
+  .scrolling-wrapper::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+  
+  .scrolling-wrapper:hover::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+  }
+
+  .card {
+    flex: 0 0 auto;
+    width: 300px;
+    margin-right: 10px;
+  }
+
+  #opportunities .card {
+    width: 98%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
