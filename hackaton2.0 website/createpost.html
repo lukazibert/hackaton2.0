@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Create post</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+
+    <script>
+
+    </script>
+
+</head>
+<body>
+    <div class="registration-form">
+        <form>
+            <div class="form-icon">
+                <span><i class="icon icon-bulb"></i></span>
+            </div>
+            <div class="form-group">
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" class="form-control" placeholder="Enter title">
+              </div>
+              <div class="form-group">
+                <label for="content">Description:</label>
+                <textarea id="content" name="content" class="form-control" placeholder="Enter content"></textarea>
+              </div>
+              <div class="form-group">
+                <label for="category">Field:</label>
+                <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                    <option selected></option>
+                    <option value="1">Programming</option>
+                    <option value="2">Design</option>
+                    <option value="3">Marketing</option>
+                    <option value="4">Business</option>
+                    <option value="5">Finance</option>
+                    <option value="6">Software Development</option>
+                    <option value="7">Graphic Design</option>
+                    <option value="8">Data Analytics</option>
+                    <option value="9">Cybersecurity</option>
+                    <option value="10">Innovation Consulting</option>
+                    <option value="11">Artificial Intelligence</option>
+                    <option value="12">Web Development</option>
+                    <option value="13">Digital Marketing</option>
+                    <option value="14">Startup Incubator</option>
+                    <option value="15">Mobile App Development</option>
+                    <option value="16">Tech Education and Training</option>
+                    <option value="17">Cryptocurrency and Blockchain</option>
+                  </select>
+              </div>
+
+              <div class="form-group">
+                <label for="deadline">Application Deadline:</label>
+                <div class="input-group date" id="deadline-datepicker" data-target-input="nearest">
+                  <input type="text" class="form-control datetimepicker-input" data-target="#deadline-datepicker" id="deadline" name="deadline" placeholder="Enter deadline" />
+                  <div class="input-group-append" data-target="#deadline-datepicker" data-toggle="datetimepicker">
+                    <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="criteria">Eligibility Criteria:</label>
+                <textarea id="criteria" name="criteria" class="form-control" placeholder="Enter eligibility criteria"></textarea>
+              </div>
+        
+              <div class="form-group">
+                <button type="submit" class="btn btn-block create-account">Create post</button>
+            </div>
+        </form>
+       
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

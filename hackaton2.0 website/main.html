@@ -1,0 +1,185 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard </title>
+
+    <!-- import bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
+
+
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/library.css">
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="w-100 d-flex justify-content-between align-content-between">
+      <div class="d-flex">
+        <a class="nav-link" href="main.html"><i class="fas fa-home mr-1"></i>Home </a>
+      <a class="nav-link" href="#"><i class="fas fa-home mr-1"></i>About</a>
+      </div>
+      
+    <div class="d-flex">
+        <a class="nav-link" href="viewposts.html"><i class="fas fa-clipboard mr-1"></i> My Offers</a>
+      <a class="nav-link" href="createpost.html"><i class="fas fa-plus mr-1"></i> Create post</a>
+      <a class="nav-link" href="#"><i class="fas fa-user mr-1"></i> Profile</a>
+      <a class="nav-link" href="#"><i class="fas fa-sign-out-alt mr-1"></i> Logout</a>
+    </div>
+     
+    </div>
+   
+  </nav>
+    
+
+    <!-- search bar with bootstrap -->
+    <div class="container">
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="search-button" id="searchbar">
+              <div class="input-group-append">
+                <button class="btn btn-search" type="button" id="search-button">
+                  <span class="fa fa-search"></span>
+                </button>
+          </div>
+        </div>
+      </div>
+    
+    
+
+
+    <div class="container" id="recommended">
+        <div class="row">
+            <div class="col-sm-12">
+
+                <!-- make a list of scrollable boxes -->
+                <div class="container">
+                    <h2>Recommended</h2>
+                    <div class="scrolling-wrapper d-flex flex-nowrap">
+                      <div class="card">
+                        <div class="card-body">
+                          <img src="https://logowik.com/content/uploads/images/outbrain7720.jpg" alt="" class="img-thumbnail">
+                          <h5 class="card-title">Full-Stack Web Developer</h5>
+                          <p class="card-text">Outbrain</p>
+                        </div>
+                      </div>
+                      <div class="card cards-in">
+                        <div class="card-body">
+                          <img src="https://www.epilog.net/images/logos/logo.png" alt="" class="img-thumbnail">
+                          <h5 class="card-title">Software Developer</h5>
+                          <p class="card-text">Epilog</p>
+                        </div>
+                      </div>
+                      <div class="card cards-in">
+                        <div class="card-body">
+                          <img src="https://www.dinitcs.com/wp-content/uploads/2021/01/dinit-fb-image.png" alt="" class="img-thumbnail">
+                          <h4 class="card-title">Data scientist</h4>
+                          <p class="card-text">Dinit</p>
+                        </div>
+                      </div>
+                      <div class="card cards-in">
+                        <div class="card-body">
+                          <img src="https://gamanza.com/wp-content/uploads/2019/07/Gamanza-black-vertical-bold.png" alt="" class="img-thumbnail">
+                          <p class="card-title">Software Developer</p>
+                          <p class="card-text">Gamanza</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div id="opportunities" class="container">
+                    <h2>Opportunities</h2>
+                    <div class="row">
+                      <div class="col-md-12 oppcard">
+                        <div class="card">
+                          <div class="card-body">
+                            <div class="row">
+                              <div class="col-md-3">
+                                <img class="img-thumbnail" src="https://gamanza.com/wp-content/uploads/2019/07/Gamanza-black-vertical-bold.png" alt="">
+                              </div>
+                              <div class="col-md-9">
+                                <h3 class="card-title">Gamanza</h3>
+                                <p class="card-text">100€/month</p>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-12">
+                                <p class="card-text">Gamanza is a leading company in the field of gaming and technology, dedicated to providing innovative solutions and services to the gaming industry. As part of their commitment to fostering talent and supporting the next generation of professionals in the field, Gamanza is proud to offer scholarships to students interested in pursuing careers in gaming and related fields.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12 oppcard">
+                        <div class="card">
+                          <div class="card-body">
+                            <div class="row">
+                              <div class="col-md-3">
+                                <img class="img-thumbnail" src="https://www.dinitcs.com/wp-content/uploads/2021/01/dinit-fb-image.png" alt="">
+                              </div>
+                              <div class="col-md-9">
+                                <h3 class="card-title">Dinit</h3>
+                                <p class="card-text">100€/month</p>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-12">
+                                <p class="card-text">
+                                  Dinit is an innovative and dynamic company at the forefront of technology and digital solutions. With a strong focus on cutting-edge advancements and creative problem-solving, Dinit is dedicated to delivering exceptional products and services to its clients and customers.
+                                  
+                                  </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12 oppcard">
+                        <div class="card">
+                          <div class="card-body">
+                            <div class="row">
+                              <div class="col-md-3">
+                                <img class="img-thumbnail" src="http://www.projektip.si/wp-content/uploads/2017/05/logo1.jpg" alt="">
+                              </div>
+                              <div class="col-md-9">
+                                <h3 class="card-title">projekt ip</h3>
+                                <p class="card-text">150€/month</p>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-12">
+                                <p class="card-text">Projekt ip is a leading company in the field of gaming and technology, dedicated to providing innovative solutions and services to the gaming industry. As part of their commitment to fostering talent and supporting the next generation of professionals in the field, Gamanza is proud to offer scholarships to students interested in pursuing careers in gaming and related fields.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-12 oppcard">
+                        <div class="card">
+                          <div class="card-body">
+                            <div class="row">
+                              <div class="col-md-3">
+                                <img class="img-thumbnail" src="https://www.epilog.net/images/logos/logo.png" alt="">
+                              </div>
+                              <div class="col-md-9">
+                                <h3 class="card-title">Epilog</h3>
+                                <p class="card-text">150€/month</p>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-12">
+                                <p class="card-text">Epilog is a leading company in the field of gaming and technology, dedicated to providing innovative solutions and services to the gaming industry. As part of their commitment to fostering talent and supporting the next generation of professionals in the field, Gamanza is proud to offer scholarships to students interested in pursuing careers in gaming and related fields.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+            </div>
+        </div>
+
+</body>
+</html>
